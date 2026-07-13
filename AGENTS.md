@@ -27,7 +27,7 @@
 - MySQL
 - Gradle
 - Redis
-- JWT Authentication (추후 추가)
+- 테스트용 사용자 식별 (`X-User-Id` 헤더)
 
 ## Development Rules
 
