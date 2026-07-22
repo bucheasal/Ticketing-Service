@@ -1,4 +1,10 @@
 package com.wonse.domain.event.dto;
 
-public record EventScheduleResponse() {
+import java.time.LocalDateTime;
+
+public record EventScheduleResponse(
+        Long scheduleId,
+        Long eventId,
+        LocalDateTime startAt
+) {
 }

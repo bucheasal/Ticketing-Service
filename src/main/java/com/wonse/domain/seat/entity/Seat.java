@@ -33,4 +33,15 @@ public class Seat {
     @Enumerated(EnumType.STRING)
     @Column(name = "status", nullable = false, length = 10)
     private SeatStatus status;
+
+    public void hold() {
+        if (this.status != SeatStatus.EMPTY) {
+            throw new IllegalArgumentException("이미 선점된 좌석입니다.");
+        }
+        this.status = SeatStatus.HELD;
+    }
+
+    public void release() {
+        this.status = SeatStatus.EMPTY;
+    }
 }

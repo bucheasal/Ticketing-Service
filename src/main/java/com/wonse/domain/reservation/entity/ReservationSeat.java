@@ -32,4 +32,10 @@ public class ReservationSeat {
 
     @Column(name = "reservation_id", nullable = false)
     private Long reservationId;
+
+    public ReservationSeat(Long seatId, Long scheduleId, Long reservationId) {
+        this.seatId = seatId;
+        this.scheduleId = scheduleId;
+        this.reservationId = reservationId;
+    }
 }

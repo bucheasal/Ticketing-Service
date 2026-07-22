@@ -1,4 +1,4 @@
-package com.wonse.domain.user;
+package com.wonse.domain.user.entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
